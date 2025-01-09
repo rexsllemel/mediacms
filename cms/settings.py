@@ -7,23 +7,23 @@ DEBUG = False
 
 # PORTAL NAME, this is the portal title and
 # is also shown on several places as emails
-PORTAL_NAME = "MediaCMS"
+PORTAL_NAME = "Iy Tube"
 PORTAL_DESCRIPTION = ""
 TIME_ZONE = "Europe/London"
 
 # who can add media
 # valid options include 'all', 'email_verified', 'advancedUser'
-CAN_ADD_MEDIA = "all"
+CAN_ADD_MEDIA = "email_verified"
 
 # who can comment
 # valid options include 'all', 'email_verified', 'advancedUser'
-CAN_COMMENT = "all"
+CAN_COMMENT = "email_verified"
 
 # valid choices here are 'public', 'private', 'unlisted
 PORTAL_WORKFLOW = "public"
 
 # valid values: 'light', 'dark'.
-DEFAULT_THEME = "light"
+DEFAULT_THEME = "dark"
 
 
 # These are passed on every request
@@ -60,7 +60,7 @@ INTERNAL_IPS = "127.0.0.1"
 
 # settings that are related with UX/appearance
 # whether a featured item appears enlarged with player on index page
-VIDEO_PLAYER_FEATURED_VIDEO_ON_INDEX_PAGE = False
+VIDEO_PLAYER_FEATURED_VIDEO_ON_INDEX_PAGE = True
 
 PRE_UPLOAD_MEDIA_MESSAGE = ""
 
@@ -75,7 +75,7 @@ EMAIL_PORT = 587
 ADMIN_EMAIL_LIST = ["info@mediacms.io"]
 
 
-MEDIA_IS_REVIEWED = True  # whether an admin needs to review a media file.
+MEDIA_IS_REVIEWED = False  # whether an admin needs to review a media file.
 # By default consider this is not needed.
 # If set to False, then each new media need be reviewed otherwise
 # it won't appear on public listings
@@ -91,8 +91,8 @@ MAX_MEDIA_PER_PLAYLIST = 70
 UPLOAD_MAX_SIZE = 800 * 1024 * 1000 * 5
 
 MAX_CHARS_FOR_COMMENT = 10000  # so that it doesn't end up huge
-TIMESTAMP_IN_TIMEBAR = False  # shows timestamped comments in the timebar for videos
-ALLOW_MENTION_IN_COMMENTS = False  # allowing to mention other users with @ in the comments
+TIMESTAMP_IN_TIMEBAR = True  # shows timestamped comments in the timebar for videos
+ALLOW_MENTION_IN_COMMENTS = True  # allowing to mention other users with @ in the comments
 
 # valid options: content, author
 RELATED_MEDIA_STRATEGY = "content"
@@ -113,7 +113,7 @@ TIME_TO_ACTION_ANONYMOUS = 10 * 60
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_REQUIRED = True  # new users need to specify email
-ACCOUNT_EMAIL_VERIFICATION = "optional"  # 'mandatory' 'none'
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"  # 'mandatory' 'none'
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 ACCOUNT_USERNAME_MIN_LENGTH = "4"
 ACCOUNT_ADAPTER = "users.adapter.MyAccountAdapter"
@@ -123,7 +123,7 @@ ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_LOGIN_ON_PASSWORD_RESET = True
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
-ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 20
+ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 10
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 5
 # registration won't be open, might also consider to remove links for register
 USERS_CAN_SELF_REGISTER = True
