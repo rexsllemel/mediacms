@@ -9,7 +9,7 @@ DEBUG = False
 # is also shown on several places as emails
 PORTAL_NAME = "Iy Tube"
 PORTAL_DESCRIPTION = ""
-TIME_ZONE = "Europe/London"
+TIME_ZONE = "Asia/Manila"
 
 # who can add media
 # valid options include 'all', 'email_verified', 'advancedUser'
