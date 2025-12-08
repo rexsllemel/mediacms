@@ -35,8 +35,8 @@ echo "ffmpeg installed to /usr/local/bin"
 read -p "Enter portal URL, or press enter for localhost : " FRONTEND_HOST
 read -p "Enter portal name, or press enter for 'MediaCMS : " PORTAL_NAME
 
-[ -z "$PORTAL_NAME" ] && PORTAL_NAME='MediaCMS'
-[ -z "$FRONTEND_HOST" ] && FRONTEND_HOST='localhost'
+[ -z "$PORTAL_NAME" ] && PORTAL_NAME='PaiyotTube'
+[ -z "$FRONTEND_HOST" ] && FRONTEND_HOST='paiyottube.com'
 
 echo 'Creating database to be used in MediaCMS'
 
