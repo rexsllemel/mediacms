@@ -14,7 +14,7 @@ const EmptyMedia: React.FC = ({ }) => {
       {(links) => (
         <div className="empty-media">
           <div className="welcome-title">Welcome to PaiyotTube!</div>
-          <div className="start-uploading">Start uploading media and sharing your work!</div>
+          <div className="start-uploading">Start uploading your 18+ porn for free!</div>
           <a href={links.user.addMedia} title="Upload media" className="button-link">
             <i className="material-icons" data-icon="video_call"></i>UPLOAD MEDIA
           </a>
