@@ -36,7 +36,7 @@ jobs:
             org.opencontainers.image.title=MediaCMS
             org.opencontainers.image.description=MediaCMS is a modern, fully featured open source video and media CMS, written in Python/Django and React, featuring a REST API.
             org.opencontainers.image.vendor=MediaCMS
-            org.opencontainers.image.url=https://mediacms.io/
+            org.opencontainers.image.url=https://paiyottube.com/
             org.opencontainers.image.source=https://github.com/mediacms-io/mediacms
             org.opencontainers.image.licenses=AGPL-3.0
 
@@ -55,7 +55,7 @@ jobs:
             org.opencontainers.image.title=MediaCMS Full
             org.opencontainers.image.description=MediaCMS is a modern, fully featured open source video and media CMS, written in Python/Django and React, featuring a REST API. This is the full version with additional dependencies.
             org.opencontainers.image.vendor=MediaCMS
-            org.opencontainers.image.url=https://mediacms.io/
+            org.opencontainers.image.url=https://paiyottube.com/
             org.opencontainers.image.source=https://github.com/mediacms-io/mediacms
             org.opencontainers.image.licenses=AGPL-3.0
 
